@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<!-- prettier-ignore -->
+<head>
+  <meta charset="utf-8">
+  <title>Spike Chart</title>
+  <base href="/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="./app/favicon.ico">
+  <meta name="theme-color" content="#1976d2">
+  <link rel="manifest" href="./app/manifest.json">
+  <meta name="theme-color" content="#1976d2">
+  <style>
+    	/* stylelint-disable */
+    .loader {
+      background-size: cover;
+      background-position: center;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      display: flex;
+      background: #2E3536;
+    }
+
+    .container-loading {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin: 0 auto;
+    }
+
+    .logo {
+      display: flex;
+      justify-content: center;
+    }
+
+#preloader_main {
+		position: relative;
+	}
+	#preloader_main span {
+		position: absolute;
+		width: 15px;
+    height: 30px;
+    padding:2px;
+		background: #434E4F;
+		opacity: 0.5;
+		border-radius: 20px;
+		animation: preloader_main 1s infinite ease-in-out;
+	}
+	#preloader_main span:nth-child(2) {
+		left: 20px;
+		animation-delay: .2s;
+	}
+	#preloader_main span:nth-child(3) {
+		left: 40px;
+		animation-delay: .4s;
+	}
+	#preloader_main span:nth-child(4) {
+		left: 60px;
+		animation-delay: .6s;
+	}
+	#preloader_main span:nth-child(5) {
+		left: 80px;
+		animation-delay: .8s;
+	}
+	@keyframes preloader_main {
+		0% {
+			opacity: 0.3;
+			transform: translateY(0px);
+			box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.1);
+		}
+		50% {
+			opacity: 1;
+			transform: translateY(-10px);
+			background: #BCF8FF;
+			box-shadow: 0px 20px 3px rgba(0, 0, 0, 0.05);
+		}
+		100% {
+			opacity: 0.3;
+			transform: translateY(0px);
+			box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.1);
+		}
+	}
+
+  </style>
+<link rel="stylesheet" href="./app/styles.ed9104ca8a6fda8bc203.css"></head>
+
+<body>
+  <spike-root>
+    <div class="loader">
+      <div class="container-loading">
+
+        <!-- <div class="spinner-load" style="width: 50px; height: 50px; margin: 5% auto; padding: 0;"></div> -->
+        <div id="preloader_main">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+      </div>
+      </div>
+    </div>
+
+  </spike-root>
+  <noscript>
+    Please enable JavaScript to continue using this application.
+  </noscript>
+<script type="text/javascript" src="./app/runtime.e3d55b35cd147f6e2800.js"></script><script type="text/javascript" src="./app/polyfills.c34f24bba26b9034a74d.js"></script><script type="text/javascript" src="./app/main.bb42e628e915d55b210e.js"></script></body>
+
+</html>

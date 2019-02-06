@@ -1,0 +1,181 @@
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta charset="utf-8">
+  <title>Readme file</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+  html, body{
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  </style>
+
+</head>
+
+<body>
+  <h1 id="picky-bigtime-search-api-">Picky ( BigTime Search API )</h1>
+  <h4 id="-developed-by-eaglex-">- <a href="http://eaglex.net"> Developed by Eaglex </a></h4>
+  <ul>
+    <li>This is a premium product, under license, and not for distribution.
+      <h4 id="d
+escription">DESCRIPTION</h4>
+      This is an advanced API Search application which allows to integrade dynamic Res tful/API using only client with Angular
+      6 and (Angular CLI 6). Currently it supp orts <code>PunkAPI</code>, <code>Getty Images API</code>, <code>Flickr API</code
+>, and <code>OMDB API (Movie DB)</code>. It can be extended to any number of ne w image type Restful/API&#39;s, and non image
+      for data reference. There are two pages, main products page which can toggle apis, and the product-itme/single pa ge
+      which lists all of item values in json format.</li>
+  </ul>
+  <p>It has a localstorage integration for any subsequent views to the same page/q uery.
+    <br>API&#39;s have feature&#39;s to display random results uppon every load . You can filter thru the results, and search
+    the live API as well &gt; then fil ter thru it. <code>Please read more about the details below.!</code></p>
+  <ul>
+    <li>Important: You need to register your own api keys to use in development, and purchase for production. </li>
+    <li>Demo dev site is available, see below</li>
+  </ul>
+  <h4 id="flickr">flickr</h4>
+  <p><a href='https://www.flickr.com/services/api/' target="_blank" rel="flickr api">Flickr</a> is social media for sharing free/images and selling artwork/images. Yo u can search for different types of artwork
+    in different sizes using their custo m filters. </p>
+  <h4 id="getty-images">Getty Images</h4>
+  <p><a href='https://developer.gettyimages.com' target="_blank" rel="Getty Images">Getty Images</a> is a well known payed service for buying best images you can fin d, search for all size/type/shape with custom
+    filters.</p>
+  <h4 id="ombd-api-movie-db">OMDB API Movie DB</h4>
+  <p><a href='https://omdbapi.com' target="_blank" rel="OMBD API">OMDB API</a> Is a movie data base where you can search for all generes and type: movi e/tv series, and by <code>imdbID</code> &lt;&lt;
+    from imDB database.</p>
+  <h4 id="punkapi">PunkAPI</h4>
+  <p><a href='https://punkapi.com/documentation/v2' target="_blank" rel="OMBD API">PunkAPI</a> is a fake beer product search API, good for all kinds of testing.</p>
+
+  <h5 id="install-new-angular-6-cli-and-install-angular-picky-bigtime-">INSTALL NE W Angular 6 CLI, and install angular-picky-bigtime!</h5>
+  <pre><code>
+$/ npm uninstall -g @angular/cli # remove old
+$/ npm cache verify # clear cache
+$/ npm install -g @angular/cli@next # latest
+
+$/ npm install # from the application dir
+$/ npm rebuild node-sass # from the application dir
+</code></pre>
+
+  <ul>
+    <li>After installing run ^<code>npm rebuild node-sass</code></li>
+    <li>and have a look at the <code>engine</code> requirements in <code>package.jso
+n</code>, for any issues;</li>
+  </ul>
+  <h5 id="optional-i-think-">OPTIONAL I THINK...</h5>
+  <pre><code>
+$/ gem update --system
+$/ gem install compass
+</code></pre>
+  <ul>
+    <li>im not sure if installing compass is required since im using node_modules pa ckage;
+    </li>
+  </ul>
+  <h4 id="ng-code">NG CODE</h4>
+  <pre><code>
+$/ ng new PROJECT-NAME # NEED TO INSTALL ANGULAR CLI 6, FIRST!
+$/ ng g component new-cmp # new component
+$/ ng g module new-mod # new module
+$/ ng g service new-service # new service
+</code></pre>
+  <h4 id="start-the-app">START THE APP</h4>
+  <pre><code>
+$/ npm start # alternativly `ng serve`
+$/ npm run build:prod #production ./dist folder
+</code></pre>
+  <ul>
+    <li>open you browser in <code>http://localhost:4200</code> </li>
+    <li>sometimes node.js will lock the port, you need to kill it with <code>taskkil
+l /f /im node.exe</code> or linux <code>killall node</code></li>
+  </ul>
+  <h4 id="api-documentation">API DOCUMENTATION</h4>
+  <ul>
+    <li>flickr API: <code>https://www.flickr.com/services/developer/api/</code> &lt; &lt; you need account and api_key to enable
+      flickr for your development purpouse s only, need to purchase license to use in production!</li>
+    <li>punkapi: <code>https://punkapi.com/documentation/v2</code> &lt;&lt; it is fr ee to use, but it has timeout limits, which
+      it will show you.</li>
+    <li>gettyimages API: <code>https://api.gettyimages.com/swagger/ui/index</code> a nd <code>https://api.gettyimages.com/swagger/ui/index</code>      &lt;&lt; you need a ccount and Api-Key to enable gettyimages for your development purpouses only, ne ed to purchase
+      license to use in production!</li>
+    <li>OMBD API Movie DB: <code>https://www.omdbapi.com</code> &lt;&lt; you need a ccount and apikey to enable omdbapi for your
+      development purpouses only, im not sure about the specifics of the production license, you have to enquire about it
+      your self</li>
+  </ul>
+  <h4 id="technology-stack">TECHNOLOGY/STACK</h4>
+  <ul>
+    <li>Bootstrap 4 <code>https://getbootstrap.com/</code></li>
+    <li>Angular 6 CLI <code>https://github.com/angular/angular-cli</code></li>
+    <li>Compass/Sass <code>http://compass-style.org/reference/compass/</code></li>
+    <li>RXJS,SASS/COMPASS, Bootstrap 4, Lodash, LocalStorage (management, smart stor age), Rest API, API-MANAGER, api dynamic
+      integration, dynamic routes</li>
+    <li>GettyImages, Flickr, OMBD &gt;&gt; Restful/API client integration, HTTP/As O bservalbe, </li>
+    <li>Model Interfaces, API/ Model decorators, data Model decorators, error mock v alidation
+    </li>
+    <li>Live Search, filter Search</li>
+    <li>Services: IX/UX animation, @angular/animations, TransactionResolver (product -item data resolver), event emmiters, global
+      services</li>
+    <li>@pipe&#39;s/filters </li>
+    <li>Progresive modular integration.</li>
+    <li>Production ready and optimized</li>
+  </ul>
+  <h4 id="app-hierarchy">APP HIERARCHY</h4>
+  <pre><code>
+    &lt;&lt;&lt;&lt; declaration of services at [AppModule] level;
+      [AppComponent] &gt;&gt; &lt; SearchInputDirective &gt; &lt; EventEmitService&gt; &lt; MyGlobals &gt;
+          [ProductComponent] &gt;&gt; &lt; ApiManagerService &gt;&lt; DataService&gt; &lt; LocalStorageService &gt; &lt; EventEmitService &gt; &lt; MyGlobals &gt;
+              [ProductItemComponent] &gt;&gt; &lt; TransactionResolver &gt; &lt; MyGlobals &gt;
+     
+      SASS &gt; all styles live in scss dir.
+
+</code></pre>
+  <h4 id="tested-">TESTED :)</h4>
+  <ul>
+    <li>Tested and works on Firefox and Chrome/Safari, ( Dont care about IE, but sho uld work fine)</li>
+    <li>Runs on all 6, ready to go.</li>
+  </ul>
+  <h4 id="todos">TODOS</h4>
+  <ul>
+    <li>integrate script barrel, for easy loading!</li>
+    <li>Integrade WebWorkers to streamline style loading, <code>ng eject</code> not avaialbe to create webpack.config as yet.</li>
+  </ul>
+  
+  <h4 id="final-thoughts">FINAL THOUGHTS</h4>
+  <ul>
+    <li>Let me know your professional feedback, its always welcome.</li>
+    <li>Thank you, have fun with it.</li>
+  </ul>
+  <hr>
+
+<h4 id="install-new-angular-6-cli-and-install-angular-picky-bigtime-">Demo Site available on node.js server at:</h4>
+<pre><code>
+username: user1
+password: user2
+</code></pre>
+View Demo: <a href="http://nodejs-mongo-persistent-picky2.1d35.starter-us-east-1.openshiftapps.com/login" target="_blank">Picky-Search</a>
+<br>
+<br>
+  <hr>
+  <h2 id="angular-cli-v-6-0">Angular CLI V 6.0</h2>
+  <hr>
+  <p>This project was generated with <a href="https://github.com/angular/angular-c
+li">Angular CLI</a> version 6.0.0.</p>
+
+  <h2 id="development-server">Development server</h2>
+  <p>Run <code>ng serve</code> for a dev server. Navigate to <code>http://localhos
+t:4200/</code>. The app will automatically reload if you change any of the sourc e files.</p>
+  <h2 id="code-scaffolding">Code scaffolding</h2>
+  <p>Run <code>ng generate component component-name</code> to generate a new compo nent. You can also use <code>ng generate directive|pipe|service|class|guard|inte
+rface|enum|module</code>.</p>
+  <h2 id="build">Build</h2>
+  <p>Run <code>ng build</code> to build the project. The build artifacts will be s tored in the <code>dist/</code> directory.
+    Use the <code>--prod</code> flag for a production build.</p>
+  <h2 id="running-unit-tests">Running unit tests</h2>
+  <p>Run <code>ng test</code> to execute the unit tests via <a href="https://karma
+-runner.github.io">Karma</a>.</p>
+  <h2 id="running-end-to-end-tests">Running end-to-end tests</h2>
+  <p>Run <code>ng e2e</code> to execute the end-to-end tests via <a href="http://w
+ww.protractortest.org/">Protractor</a>.</p>
+  <h2 id="further-help">Further help</h2>
+  <p>To get more help on the Angular CLI use <code>ng help</code> or go check out the <a href="https://github.com/angular/angular-cli/blob/master/README.md">Angul
+ar CLI README</a>.</p>
+
+</body>
+
+</html>

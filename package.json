@@ -1,0 +1,42 @@
+{
+  "name": "picky-search",
+  "version": "1.0.1",
+  "description": "Node.js app for heroku",
+  "main": "server.js",
+  "private": true,
+  "dependencies": {
+    "bcrypt": "^2.0.1",
+    "body-parser": "^1.18.3",
+    "chai": "^3.5.0",
+    "chai-http": "^2.0.1",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "fs": "0.0.1-security",
+    "http-proxy": "^1.17.0",
+    "lodash": "^4.17.11",
+    "mocha": "^2.4.5",
+    "morgan": "^1.9.1",
+    "newsapi": "^2.4.0",
+    "object-assign": "4.1.0",
+    "path": "^0.12.7",
+    "ps-tree": "^1.2.0",
+    "q": "^1.5.1",
+    "querystring": "^0.2.0",
+    "random-useragent": "^0.3.1",
+    "request": "^2.88.0"
+  },
+  "engine": {
+    "node": "*",
+    "npm": "*"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "test": "node test.js"
+  },
+  "devDependencies": {
+    "express-session": "^1.15.6",
+    "jsonwebtoken": "^8.4.0"
+  }
+}

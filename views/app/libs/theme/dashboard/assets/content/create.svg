@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>91450FF3-A760-4E6E-B97A-016415785921</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <path d="M2.25,12.9375003 L2.25,15.7500004 L5.06250008,15.7500004 L13.3575003,7.45500012 L10.5450002,4.64250004 L2.25,12.9375003 Z M15.5325,5.27999993 C15.825,4.98749993 15.825,4.51499993 15.5325,4.22249994 L13.7775001,2.46749995 C13.4850001,2.17499996 13.0125001,2.17499996 12.7200001,2.46749995 L11.3475001,3.83999994 L14.1600001,6.65249991 L15.5325,5.27999993 Z" id="path-1"></path>
+    </defs>
+    <g id="Admin" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Admin---Validation-2" transform="translate(-1237.000000, -86.000000)">
+            <g id="header" transform="translate(215.000000, 64.000000)">
+                <g id="top">
+                    <g id="Group" transform="translate(782.000000, 10.000000)">
+                        <g id="Icons-/-Content-/-create" transform="translate(238.000000, 10.000000)">
+                            <mask id="mask-2" fill="white">
+                                <use xlink:href="#path-1"></use>
+                            </mask>
+                            <use id="Icon" fill="#000000" fill-rule="nonzero" xlink:href="#path-1"></use>
+                            <g id="↳🎨-Color" mask="url(#mask-2)" fill="#1D3C60">
+                                <rect id="Colors-/-toolbar_bg" x="0" y="0" width="18" height="18"></rect>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

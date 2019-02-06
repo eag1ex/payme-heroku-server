@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="44px" height="44px" viewBox="0 0 44 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>FBEB8180-C50A-41AB-B46A-D9E1283A1564</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <path d="M21.5473228,43.0946457 C9.64748698,43.0946457 0,33.4471587 0,21.5473228 C0,9.64748698 9.64748698,0 21.5473228,0 C33.4471587,0 43.0946457,9.64748698 43.0946457,21.5473228 C43.0946457,33.4471587 33.4471587,43.0946457 21.5473228,43.0946457 Z M21.5473226,39.0834489 C31.2318358,39.0834489 39.0834489,31.2318358 39.0834489,21.5473226 C39.0834489,11.8628094 31.2318358,4.01119623 21.5473226,4.01119623 C11.8628094,4.01119623 4.01119623,11.8628094 4.01119623,21.5473226 C4.01119623,31.2318358 11.8628094,39.0834489 21.5473226,39.0834489 Z M30.3580976,14.9353255 C31.1480152,14.1906822 32.3920225,14.2273843 33.1366658,15.0173019 C33.8813091,15.8072195 33.844607,17.0512269 33.0546894,17.7958702 L21.2925428,28.8838667 C20.5119759,29.6196952 19.2855997,29.593803 18.5367853,28.8256849 L12.5581376,22.6929141 C11.8003529,21.9155945 11.816189,20.6711466 12.5935086,19.9133618 C13.3708282,19.1555771 14.6152761,19.1714133 15.3730609,19.9487329 L20.0024368,24.6974492 L30.3580976,14.9353255 Z" id="path-1"></path>
+    </defs>
+    <g id="Admin" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Admin---Generate---Processed" transform="translate(-695.000000, -432.000000)">
+            <g id="question" transform="translate(510.000000, 282.000000)">
+                <g id="Components-/-Tables-/-Rate-/-Row" transform="translate(13.000000, 62.000000)">
+                    <g id="Icons-/-Notification-/-sync" transform="translate(170.000000, 86.000000)">
+                        <g id="colors-/-black" transform="translate(2.400000, 2.400000)">
+                            <mask id="mask-2" fill="white">
+                                <use xlink:href="#path-1"></use>
+                            </mask>
+                            <use id="Mask" fill="#D8D8D8" xlink:href="#path-1"></use>
+                            <g id="Colors-/-green" mask="url(#mask-2)" fill="#00B007">
+                                <rect x="0" y="0" width="43.2000008" height="43.2000008"></rect>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
