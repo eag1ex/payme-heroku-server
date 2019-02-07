@@ -23,7 +23,9 @@
     "q": "^1.5.1",
     "querystring": "^0.2.0",
     "random-useragent": "^0.3.1",
-    "request": "^2.88.0"
+    "request": "^2.88.0",
+    "express-session": "^1.15.6",
+    "jsonwebtoken": "^8.4.0"
   },
   "engine": {
     "node": "*",
@@ -32,9 +34,5 @@
   "scripts": {
     "start": "node server.js",
     "test": "node test.js"
-  },
-  "devDependencies": {
-    "express-session": "^1.15.6",
-    "jsonwebtoken": "^8.4.0"
   }
 }
