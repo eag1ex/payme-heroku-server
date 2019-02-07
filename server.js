@@ -31,7 +31,7 @@ var appRouter = require('./lib/app.router');
 var Ctrl = require('./lib/ctrls.js');
 var ejs = require('ejs');
 var session = require('./lib/express-sess');
-var serverProxy = require('./lib/serverProxy');
+//var serverProxy = require('./lib/serverProxy');
 app.use(morgan('dev'));
 app.set('trust proxy', 1); // trust first proxy
 app.use(bodyParser.urlencoded({ extended: false }));
