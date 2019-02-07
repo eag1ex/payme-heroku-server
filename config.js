@@ -12,6 +12,6 @@ module.exports = {
         'PUBLIC': "./views",
         'secret': '5646dfgfg6767uytyu7687454557678789',
         port:port,
-        HOST:(localhost)? `http://localhost:${port}`:'https://nameless-shore-60398.herokuapp.com'
+        HOST:(localhost)? `http://localhost:${port}`:'https://mysterious-hollows-67349.herokuapp.com'
         
     };
