@@ -10,8 +10,8 @@ var port = process.env.PORT || 5000;
 
 module.exports = {
         'PUBLIC': "./views",
-        'secret': '097359075op3208070kgdf;ljg8y3hru0935',
+        'secret': 'dflku89745iojgjdf9gu905jfdg095i56',
         port:port,
-        HOST:(localhost)? `http://localhost:${port}`:'https://mysterious-hollows-67349.herokuapp.com'
+        HOST:(localhost)? `http://localhost:${port}`:''
         
     };
