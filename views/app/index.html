@@ -1,115 +1,60 @@
+<!doctype html><html lang="en"><head><meta charset="UTF-8">
+<base href="/app">
+<title>$PAYME</title><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" type="image/x-icon" href="./app/favicon.ico"><link href="./app/1.bundle.css" rel="stylesheet"><link href="./app/bundle.css" rel="stylesheet"></head><style>/**
+    To display preloading before anything alse, we need to initiate this first here, 
+    so we dont see ugly browser rendering.
+    We set `#app-payme` to visibility `hidden` this way it can load it behind the scene, 
+    then we set it to `visible` from App.vue
+    **/
 
-<!DOCTYPE html>
-<html lang="en">
-<!-- prettier-ignore -->
-<head>
-  <meta charset="utf-8">
-  <title>Spike Chart</title>
-  <base href="/">
-
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="./app/favicon.ico">
-  <meta name="theme-color" content="#1976d2">
-  <link rel="manifest" href="./app/manifest.json">
-  <meta name="theme-color" content="#1976d2">
-  <style>
-    	/* stylelint-disable */
-    .loader {
-      background-size: cover;
-      background-position: center;
-      position: absolute;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      right: 0;
-      display: flex;
-      background: #2E3536;
+    html{
+        background-color:#000; 
     }
-
-    .container-loading {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      margin: 0 auto;
+    #app-payme{
+        visibility: hidden;
     }
-
-    .logo {
-      display: flex;
-      justify-content: center;
+    #start-app-preloader {
+        width:100%;
+        height:100%; 
+        position:absolute;
+        top:50%;
+        left:50%;
+        transform:translate(-50%,-50%);
+        background:#303030;
+        filter: blur(10px) contrast(20);
     }
-
-#preloader_main {
-		position: relative;
-	}
-	#preloader_main span {
-		position: absolute;
-		width: 15px;
-    height: 30px;
-    padding:2px;
-		background: #434E4F;
-		opacity: 0.5;
-		border-radius: 20px;
-		animation: preloader_main 1s infinite ease-in-out;
-	}
-	#preloader_main span:nth-child(2) {
-		left: 20px;
-		animation-delay: .2s;
-	}
-	#preloader_main span:nth-child(3) {
-		left: 40px;
-		animation-delay: .4s;
-	}
-	#preloader_main span:nth-child(4) {
-		left: 60px;
-		animation-delay: .6s;
-	}
-	#preloader_main span:nth-child(5) {
-		left: 80px;
-		animation-delay: .8s;
-	}
-	@keyframes preloader_main {
-		0% {
-			opacity: 0.3;
-			transform: translateY(0px);
-			box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.1);
-		}
-		50% {
-			opacity: 1;
-			transform: translateY(-10px);
-			background: #BCF8FF;
-			box-shadow: 0px 20px 3px rgba(0, 0, 0, 0.05);
-		}
-		100% {
-			opacity: 0.3;
-			transform: translateY(0px);
-			box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.1);
-		}
-	}
-
-  </style>
-<link rel="stylesheet" href="./app/styles.ed9104ca8a6fda8bc203.css"></head>
-
-<body>
-  <spike-root>
-    <div class="loader">
-      <div class="container-loading">
-
-        <!-- <div class="spinner-load" style="width: 50px; height: 50px; margin: 5% auto; padding: 0;"></div> -->
-        <div id="preloader_main">
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-      </div>
-      </div>
-    </div>
-
-  </spike-root>
-  <noscript>
-    Please enable JavaScript to continue using this application.
-  </noscript>
-<script type="text/javascript" src="./app/runtime.6a024e8c5d422fdab16a.js"></script><script type="text/javascript" src="./app/polyfills.c34f24bba26b9034a74d.js"></script><script type="text/javascript" src="./app/main.2aa4ecd3b61c80272214.js"></script></body>
-
-</html>
+    #start-app-preloader >div{
+        width: 350px;
+        height: 350px;
+        position: relative;
+        margin: 0 auto;
+        top: 15%;
+    }
+    #start-app-preloader .blob-1, #start-app-preloader .blob-2{
+                width:70px;
+                height:70px;
+                position:absolute;
+                background:#fff;
+                border-radius:50%;
+                top:50%;left:50%;
+                transform:translate(-50%,-50%);
+            }
+            #start-app-preloader .blob-1{
+                left:20%;
+                animation:osc-l 2.5s ease infinite;
+            }
+            #start-app-preloader  .blob-2{
+                left:80%;
+                animation:osc-r 2.5s ease infinite;
+                background:#0ff;
+            }
+            @keyframes osc-l{
+                0%{left:20%;}
+                50%{left:50%;}
+                100%{left:20%;}
+            }
+            @keyframes osc-r{
+                0%{left:80%;}
+                50%{left:50%;}
+                100%{left:80%;}
+            }</style><body><div id="app"></div><div id="start-app-preloader"><div><div class="blob-1"></div><div class="blob-2"></div></div></div><noscript>Please enable JavaScript to continue using this application.</noscript><script src="./app/1.1a966cc8.chunk.js"></script><script src="./app/app.f3a57cf4.js"></script></body></html>

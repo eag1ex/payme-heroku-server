@@ -1,0 +1,37 @@
+{
+    
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+      },
+    "search.exclude": {
+        "**/.git": true,
+        "**/node_modules": true
+    },
+    "files.autoSave": "off",
+    "eslint.enable": false,
+    "eslint.autoFixOnSave": true,
+    "eslint.alwaysShowStatus": true,
+    "eslint.run": "onType",
+    "javascript.validate.enable": false,
+    "javascript.format.enable": true,
+    "commentAnchors.tags.separators": [
+        " ",
+        ": ",
+        " - "
+    ],
+    "commentAnchors.workspace.matchFiles": "**/*",
+    "commentAnchors.workspace.excludeFiles": "**/{node_modules,.git,.idea,target,out,build,vendor}/**/*",
+    "commentAnchors.tags": [
+        {"tag": "ANCHOR", "iconColor": "default", "highlightColor": "#A8C023", "backgroundColor": "#49511d", "scope": "file"},
+        {"tag": "TODO", "iconColor": "blue", "highlightColor": "#3ea8ff", "backgroundColor": "#0052a5", "scope": "workspace"},
+        {"tag": "FIXME", "iconColor": "red", "highlightColor": "#F44336", "backgroundColor": "#592c2c", "scope": "workspace"},
+        {"tag": "STUB", "iconColor": "purple", "highlightColor": "#BA68C8", "backgroundColor": "#48309a", "scope": "file"},
+        {"tag": "NOTE", "iconColor": "orange", "highlightColor": "#FFB300", "backgroundColor": "#806900", "scope": "file"},
+        {"tag": "REVIEW", "iconColor": "orange", "highlightColor": "#64DD17", "backgroundColor": "#3c7c10", "scope": "workspace"},
+        {"tag": "SECTION", "iconColor": "blurple", "highlightColor": "#896afc", "backgroundColor": "#2a186b", "scope": "workspace"}
+    ],
+}
