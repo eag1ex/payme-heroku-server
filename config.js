@@ -12,5 +12,6 @@ module.exports = {
         'PUBLIC': "./views",
         'secret': 'dflku89745iojgjdf9gu905jfdg095i56',
         port:port,
-        HOST:(localhost)? `http://localhost:${port}`:'https://blooming-journey-82987.herokuapp.com'
+        HOST:(localhost)? `http://localhost:${port}`:'https://blooming-journey-82987.herokuapp.com',
+        localhostAuth:`localhost-234667788987334` // localhost dev skip authorization
     };
