@@ -1,6 +1,0 @@
-
-
-build url:
-https://mysterious-hollows-67349.herokuapp.com/login
-login:spike
-password:spike
