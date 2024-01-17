@@ -2,9 +2,17 @@
   "name": "payme-server",
   "version": "1.0.1",
   "description": "Node.js app for heroku",
-  "main": "server.js",
+  "main": "index.js",
   "private": true,
+  "devDependencies": {
+    "@types/node": "^16.18.32",
+    "@types/prettier": "^2.7.1",
+    "@types/express": "^4.17.15",
+    "@types/express-session": "^1.17.5"
+  },
   "dependencies": {
+    "dotenv": "^16.0.3",
+    "dotenv-expand": "^9.0.0",
     "bash-color": "0.0.4",
     "body-parser": "^1.18.3",
     "chai": "^3.5.0",
@@ -15,7 +23,7 @@
     "eslint": "^5.14.1",
     "express": "^4.16.4",
     "express-session": "^1.15.6",
-    "firebase-admin": "^7.0.0",
+    "firebase-admin": "^11.7.0",
     "fs": "0.0.1-security",
     "jsonwebtoken": "^8.4.0",
     "lodash": "^4.17.11",
@@ -27,12 +35,12 @@
     "q": "^1.5.1",
     "querystring": "^0.2.0"
   },
+  "engineStrict": true,
   "engine": {
-    "node": "*",
-    "npm": "*"
+    "node": "14"
   },
   "scripts": {
-    "start": "node server.js",
+    "start": "node index.js",
     "test": "node test.js"
   }
 }
